@@ -1,0 +1,5 @@
+# 1. 須有root權限
+# 2. 請將authorized_keys更換為正確的public key，在ssh client主機帳號家目錄下執行
+# #cat ~/.ssh/id_ecdsa.pub > authorized_keys
+# 3. 將createuser目錄放置到要建立user的主機中,使用root權限執行./createuser.sh
+# # ./createuser.sh {{username}}  -- 請置換要建立的帳號 
