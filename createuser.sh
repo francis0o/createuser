@@ -5,7 +5,7 @@ username=$1
 
 # Create User Account by RedHat(CentOS)
 /usr/sbin/useradd $username
-echo {{Password}} |passwd --stdin
+echo {{Password}} |passwd $username --stdin
 mkdir -p /home/$username/.ssh
 chmod 700 /home/$username/.ssh && chown $username:$username /home/$username/.ssh
 cp ./authorized_keys /home/$username/.ssh/authorized_keys
