@@ -1,6 +1,6 @@
 #!/bin/bash
 #maintainence by Marucs.tsai
-
+export PATH=$PATH:/usr/sbin/:/usr/bin
 username=$1
 
 # Create User Account by RedHat(CentOS)
