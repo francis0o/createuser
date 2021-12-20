@@ -4,7 +4,7 @@ export PATH=$PATH:/usr/sbin/:/usr/bin
 username=$1
 
 # Create User Account by RedHat(CentOS)
-/usr/sbin/useradd $username
+useradd -m $username
 echo {{Password}} |passwd $username --stdin
 mkdir -p /home/$username/.ssh
 chmod 700 /home/$username/.ssh && chown $username:$username /home/$username/.ssh
