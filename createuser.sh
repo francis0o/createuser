@@ -1,8 +1,8 @@
 #!/bin/bash
 #maintainence by Marucs.tsai
 export PATH=$PATH:/usr/sbin/:/usr/bin
-username=$1
-
+#username=$1
+username=fsuser
 # Create User Account by RedHat/CentOS/ubuntu
 useradd -m $username
 echo "$username:1qaz@WSX" |chpasswd
